@@ -1,0 +1,124 @@
+ 
+****************************************
+Report : reference
+Design : eBike
+Version: V-2023.12-SP5
+Date   : Fri May  2 01:16:57 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_LVT         saed32lvt_tt0p85v25c
+                                  2.033152     255    518.453786  
+AND2X2_LVT         saed32lvt_tt0p85v25c
+                                  2.287296       2      4.574592  
+AND3X1_LVT         saed32lvt_tt0p85v25c
+                                  2.287296      52    118.939395  
+AND4X1_LVT         saed32lvt_tt0p85v25c
+                                  2.541440       8     20.331520  
+AO21X1_LVT         saed32lvt_tt0p85v25c
+                                  2.541440      32     81.326080  
+AO22X1_LVT         saed32lvt_tt0p85v25c
+                                  2.541440     244    620.111362  
+AO221X1_LVT        saed32lvt_tt0p85v25c
+                                  3.049728      29     88.442110  
+AO222X1_LVT        saed32lvt_tt0p85v25c
+                                  3.303872     106    350.210443  
+AOI21X1_LVT        saed32lvt_tt0p85v25c
+                                  3.049728       8     24.397823  
+AOI22X1_LVT        saed32lvt_tt0p85v25c
+                                  3.049728      49    149.436668  
+AOI221X1_LVT       saed32lvt_tt0p85v25c
+                                  3.558016       3     10.674048  
+AOI222X1_LVT       saed32lvt_tt0p85v25c
+                                  3.812160       5     19.060800  
+DFFARX1_LVT        saed32lvt_tt0p85v25c
+                                  7.116032     341   2426.566954  n
+DFFASX1_LVT        saed32lvt_tt0p85v25c
+                                  7.116032      91    647.558923  n
+DFFNARX1_LVT       saed32lvt_tt0p85v25c
+                                  7.370176       2     14.740352  n
+DFFNASX1_LVT       saed32lvt_tt0p85v25c
+                                  7.116032       1      7.116032  n
+DFFX1_LVT          saed32lvt_tt0p85v25c
+                                  6.607744     190   1255.471401  n
+DFFX2_LVT          saed32lvt_tt0p85v25c
+                                  7.116032       5     35.580161  n
+FADDX1_LVT         saed32lvt_tt0p85v25c
+                                  4.828736     411   1984.610425  r
+HADDX1_LVT         saed32lvt_tt0p85v25c
+                                  3.303872      35    115.635524  r
+INVX0_LVT          saed32lvt_tt0p85v25c
+                                  1.270720     320    406.630402  
+INVX1_LVT          saed32lvt_tt0p85v25c
+                                  1.270720       6      7.624320  
+INVX2_LVT          saed32lvt_tt0p85v25c
+                                  1.524864      47     71.668606  
+LATCHX1_LVT        saed32lvt_tt0p85v25c
+                                  5.082880      63    320.221441  n
+LATCHX2_LVT        saed32lvt_tt0p85v25c
+                                  5.591168       1      5.591168  n
+MUX21X1_LVT        saed32lvt_tt0p85v25c
+                                  3.303872      14     46.254210  
+MUX41X1_LVT        saed32lvt_tt0p85v25c
+                                  5.591168       4     22.364672  
+NAND2X0_LVT        saed32lvt_tt0p85v25c
+                                  1.524864     319    486.431603  
+NAND2X2_LVT        saed32lvt_tt0p85v25c
+                                  2.795584       2      5.591168  
+NAND3X0_LVT        saed32lvt_tt0p85v25c
+                                  1.779008      99    176.121795  
+NAND4X0_LVT        saed32lvt_tt0p85v25c
+                                  2.033152      38     77.259780  
+NOR2X1_LVT         saed32lvt_tt0p85v25c
+                                  2.541440      14     35.580160  
+NOR2X2_LVT         saed32lvt_tt0p85v25c
+                                  2.795584       1      2.795584  
+NOR3X0_LVT         saed32lvt_tt0p85v25c
+                                  2.795584       2      5.591168  
+NOR4X1_LVT         saed32lvt_tt0p85v25c
+                                  3.049728       7     21.348095  
+OA21X1_LVT         saed32lvt_tt0p85v25c
+                                  2.541440     116    294.807041  
+OA22X1_LVT         saed32lvt_tt0p85v25c
+                                  2.541440      29     73.701760  
+OA221X1_LVT        saed32lvt_tt0p85v25c
+                                  3.049728      57    173.834491  
+OA222X1_LVT        saed32lvt_tt0p85v25c
+                                  3.303872      12     39.646465  
+OAI21X1_LVT        saed32lvt_tt0p85v25c
+                                  3.049728       5     15.248640  
+OAI22X1_LVT        saed32lvt_tt0p85v25c
+                                  3.049728       4     12.198912  
+OAI221X1_LVT       saed32lvt_tt0p85v25c
+                                  3.558016       4     14.232064  
+OAI222X1_LVT       saed32lvt_tt0p85v25c
+                                  3.812160       1      3.812160  
+OR2X1_LVT          saed32lvt_tt0p85v25c
+                                  2.033152      58    117.922822  
+OR3X1_LVT          saed32lvt_tt0p85v25c
+                                  2.287296      15     34.309441  
+OR4X1_LVT          saed32lvt_tt0p85v25c
+                                  3.558016       1      3.558016  
+XNOR2X1_LVT        saed32lvt_tt0p85v25c
+                                  4.320448       2      8.640896  
+XOR2X1_LVT         saed32lvt_tt0p85v25c
+                                  4.320448       4     17.281792  
+XOR3X1_LVT         saed32lvt_tt0p85v25c
+                                  7.116032       6     42.696193  
+XOR3X2_LVT         saed32lvt_tt0p85v25c
+                                  7.370176       1      7.370176  
+-----------------------------------------------------------------------------
+Total 50 references                                 11043.573441
+1

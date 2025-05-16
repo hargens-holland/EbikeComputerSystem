@@ -1,0 +1,1134 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vA2D_intf
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1746164040
+!i10b 1
+!s100 Ff_S[B75acXBAJkWDgofO1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IY_;4;7LQRA:=laOVj2@0H3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/hshar/OneDrive/Documents/ECE551/ece551
+Z5 w1746164006
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/A2D_intf.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/A2D_intf.sv
+!i122 99
+L0 1 134
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1746164040.000000
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/A2D_intf.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/A2D_intf.sv|
+!i113 1
+Z8 o-work work -sv
+Z9 tCvgOpt 0
+n@a2@d_intf
+vA2D_intf_tb
+R0
+R1
+!i10b 1
+!s100 :aKe>f4mIn97o?F9iOEAU2
+R2
+I[9^JT<P<hV4A:J3JR@_c=1
+R3
+S1
+R4
+R5
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/A2D_intf_tb.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/A2D_intf_tb.sv
+!i122 100
+Z10 L0 1 105
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/A2D_intf_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/A2D_intf_tb.sv|
+!i113 1
+R8
+R9
+n@a2@d_intf_tb
+vADC128S
+R0
+R1
+!i10b 1
+!s100 iL2zkc^KeI[4_PCXk?lB03
+R2
+IUgnbX4UJ?06<O<YJglHY61
+R3
+S1
+R4
+R5
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ADC128S.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ADC128S.sv
+!i122 101
+Z11 L0 1 112
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ADC128S.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ADC128S.sv|
+!i113 1
+R8
+R9
+n@a@d@c128@s
+vAnalogModel
+R0
+R1
+!i10b 1
+!s100 V5Mo]QPJ?<ojR=o8>V^H10
+R2
+I34AEk6^;6B@9bde?gC6oc2
+R3
+S1
+R4
+R5
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/AnalogModel.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/AnalogModel.sv
+!i122 102
+Z12 L0 1 111
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/AnalogModel.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/AnalogModel.sv|
+!i113 1
+R8
+R9
+n@analog@model
+vbrushless
+R0
+R1
+!i10b 1
+!s100 SI9kbGEUXUWCkBzU>bA;Y3
+R2
+I8hQ4eR9JOmRchdb;?h2_51
+R3
+S1
+R4
+Z13 w1746164007
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/brushless.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/brushless.sv
+!i122 103
+Z14 L0 1 107
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/brushless.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/brushless.sv|
+!i113 1
+R8
+R9
+vbrushless_mtr_drv
+R0
+R1
+!i10b 1
+!s100 9<F0U4cd;ZgYkfk[OE^<=2
+R2
+IM2OATUe2z]Xdf0FdS<hO`3
+R3
+S1
+R4
+R13
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/brushless_mtr_drive.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/brushless_mtr_drive.sv
+!i122 104
+L0 1 45
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/brushless_mtr_drive.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/brushless_mtr_drive.sv|
+!i113 1
+R8
+R9
+vcadence_filt
+R0
+R1
+!i10b 1
+!s100 onGYZRW<gA_`gKF6C_B=R2
+R2
+I2hRKobnWO5]n9S]e>53]l1
+R3
+S1
+R4
+R13
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_filt.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_filt.sv
+!i122 105
+L0 1 60
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_filt.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_filt.sv|
+!i113 1
+R8
+R9
+vcadence_filt_tb
+R0
+Z15 !s110 1746164042
+!i10b 1
+!s100 lMYPF8gb[]z]i2Y4g2^=c0
+R2
+Ii5Sm<9_Z?SCmDZPCeUKR70
+R3
+S1
+R4
+R13
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_filt_tb.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_filt_tb.sv
+!i122 106
+L0 1 95
+R6
+r1
+!s85 0
+31
+Z16 !s108 1746164042.000000
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_filt_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_filt_tb.sv|
+!i113 1
+R8
+R9
+vcadence_LU
+R0
+R15
+!i10b 1
+!s100 BTkJ1lgHmZ_j@E3b@lDg@0
+R2
+IMePVoB>i;MRWFFQa>bo1_3
+R3
+S1
+R4
+R13
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_LU.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_LU.sv
+!i122 107
+L0 1 237
+R6
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_LU.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_LU.sv|
+!i113 1
+R8
+R9
+ncadence_@l@u
+vcadence_meas
+R0
+R15
+!i10b 1
+!s100 ]l`h1FGljl5aDD3m=3Sib3
+R2
+I>FSJz8KDdV8z9iL7=g2<L2
+R3
+S1
+R4
+R13
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_meas.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_meas.sv
+!i122 108
+Z17 L0 1 71
+R6
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_meas.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/cadence_meas.sv|
+!i113 1
+R8
+R9
+vcoil_volt
+R0
+R15
+!i10b 1
+!s100 4m?i0G0:H=2hDnM2Hd9JV0
+R2
+IA34zoZT?Q[YT<00<37z_E2
+R3
+S1
+R4
+Z18 w1746164008
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/coil_volt.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/coil_volt.sv
+!i122 109
+L0 6 146
+R6
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/coil_volt.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/coil_volt.sv|
+!i113 1
+R8
+R9
+vdesiredDrive
+R0
+R15
+!i10b 1
+!s100 <54HUN_9NUKE3DXA?R_<o3
+R2
+IT_CdeJOJ0R=FehfHH7T6P0
+R3
+S1
+R4
+R18
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/desiredDrive.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/desiredDrive.sv
+!i122 110
+L0 1 75
+R6
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/desiredDrive.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/desiredDrive.sv|
+!i113 1
+R8
+R9
+ndesired@drive
+veBike
+R0
+R15
+!i10b 1
+!s100 kHB:l>]6PIK=W^od`UdQM3
+R2
+I_j61j``LCko7XbOn2zfYN0
+R3
+S1
+R4
+R18
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBike.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBike.sv
+!i122 111
+L0 1 119
+R6
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBike.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBike.sv|
+!i113 1
+R8
+R9
+ne@bike
+veBike_tb
+R0
+Z19 !s110 1746164043
+!i10b 1
+!s100 0@2@2_h`VIYS4VSZWh_PG2
+R2
+ICDlKdh@<a79834^F]]]TL0
+R3
+S1
+R4
+Z20 w1746164009
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBike_tb.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBike_tb.sv
+!i122 112
+L0 2 149
+R6
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBike_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBike_tb.sv|
+!i113 1
+R8
+R9
+ne@bike_tb
+veBike_tb2
+R0
+R19
+!i10b 1
+!s100 7<4A_d;EOzSQfI81MYo:Z2
+R2
+IYm@e1D@HLid43_R`C<;<03
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ebike_tb2.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ebike_tb2.sv
+!i122 113
+L0 1 284
+R6
+r1
+!s85 0
+31
+Z21 !s108 1746164043.000000
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ebike_tb2.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ebike_tb2.sv|
+!i113 1
+R8
+R9
+ne@bike_tb2
+veBikePhysics
+R0
+R19
+!i10b 1
+!s100 7AA<C7S@I3S`Q[Fb6FXS30
+R2
+I3gA8^a8zN:hhT=2RV8LSc1
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBikePhysics.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBikePhysics.sv
+!i122 114
+L0 1 527
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBikePhysics.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/eBikePhysics.sv|
+!i113 1
+R8
+R9
+ne@bike@physics
+vhub_wheel_model
+R0
+R19
+!i10b 1
+!s100 Xab4F<9U`I`1mP5@b_nMJ1
+R2
+I?oXedQEQo`LjVHkmgza]U1
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/hub_wheel_model.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/hub_wheel_model.sv
+!i122 115
+L0 1 171
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/hub_wheel_model.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/hub_wheel_model.sv|
+!i113 1
+R8
+R9
+vincline_sat
+R0
+R19
+!i10b 1
+!s100 n2z[:`7ZlA;^PcL]nKz7h3
+R2
+IIQ;bh6R6:<k92cio0nCa;3
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/incline_sat.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/incline_sat.sv
+!i122 116
+L0 1 11
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/incline_sat.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/incline_sat.sv|
+!i113 1
+R8
+R9
+vincline_sat_tb
+R0
+R19
+!i10b 1
+!s100 [5jYFb_[?5G3TLKXaK9Ho2
+R2
+I??XzW_R:nZ6aTX^<GC<?M3
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/incline_sat_tb.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/incline_sat_tb.sv
+!i122 117
+R14
+R6
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/incline_sat_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/incline_sat_tb.sv|
+!i113 1
+R8
+R9
+vinert_intf
+R0
+Z22 !s110 1746164363
+!i10b 1
+!s100 H3V=zd9Ki9KIzXjRMZa7R0
+R2
+IG51:9NFCn3mFS7z]>9bgT2
+R3
+S1
+R4
+w1746164292
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inert_intf.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inert_intf.sv
+!i122 142
+R11
+R6
+r1
+!s85 0
+31
+Z23 !s108 1746164363.000000
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inert_intf.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inert_intf.sv|
+!i113 1
+R8
+R9
+vinert_intf_test
+R0
+Z24 !s110 1746164044
+!i10b 1
+!s100 1IeYO_`BVD^eccN<gk1Il1
+R2
+I;Y]GzdHck:ioBGP;H3>a00
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inert_intf_test.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inert_intf_test.sv
+!i122 119
+L0 1 20
+R6
+r1
+!s85 0
+31
+Z25 !s108 1746164044.000000
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inert_intf_test.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inert_intf_test.sv|
+!i113 1
+R8
+R9
+vinertial_integrator
+R0
+R24
+!i10b 1
+!s100 C;NZQ:dK<KkJoZmI_zQ[z2
+R2
+I292Tn7fF2X^zTT:8B^GNM2
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inertial_integrator.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inertial_integrator.sv
+!i122 120
+R10
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inertial_integrator.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/inertial_integrator.sv|
+!i113 1
+R8
+R9
+vmtr_drv
+R0
+R24
+!i10b 1
+!s100 ZnAQl5:izTR?nli>@RU=l3
+R2
+Icmjb`:0A@J6P6GIBWi[S:2
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/mtr_drv.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/mtr_drv.sv
+!i122 121
+Z26 L0 1 117
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/mtr_drv.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/mtr_drv.sv|
+!i113 1
+R8
+R9
+vnonoverlap
+R0
+R24
+!i10b 1
+!s100 Uza:mJkZ9KV_=z:O^Q4C20
+R2
+ISQNMzG>?e7Pe_5;09NnbE1
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/nonoverlap.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/nonoverlap.sv
+!i122 122
+L0 1 65
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/nonoverlap.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/nonoverlap.sv|
+!i113 1
+R8
+R9
+vPB_intf
+R0
+R24
+!i10b 1
+!s100 ;^PbPho_Lh;[Od[RU=ZW61
+R2
+IKgR5J5BMHBDoHa9W39JJF0
+R3
+S1
+R4
+R5
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PB_intf.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PB_intf.sv
+!i122 123
+L0 1 44
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PB_intf.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PB_intf.sv|
+!i113 1
+R8
+R9
+n@p@b_intf
+vPID
+R0
+!s110 1746165787
+!i10b 1
+!s100 OeN3?NnQQ?lJU=QKO]gEB3
+R2
+IJc:YiakBajB3GoGU6PeKK3
+R3
+S1
+R4
+w1746165781
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PID.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PID.sv
+!i122 146
+L0 1 120
+R6
+r1
+!s85 0
+31
+!s108 1746165787.000000
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PID.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PID.sv|
+!i113 1
+R8
+R9
+n@p@i@d
+vPID_tb
+R0
+R24
+!i10b 1
+!s100 ^?Zd?kMAgi>OMk=`P2`LT3
+R2
+I?m=]S5L=T:U9K8TLlM@O22
+R3
+S1
+R4
+R5
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PID_tb.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PID_tb.sv
+!i122 125
+L0 1 27
+R6
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PID_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PID_tb.sv|
+!i113 1
+R8
+R9
+n@p@i@d_tb
+vplant_PID
+!s105 plant_PID_sv_unit
+DXx4 work 17 plant_PID_sv_unit 0 22 OjbWk?LDDc``Y41F7X`4a2
+R0
+Z27 !s110 1746164045
+!i10b 1
+!s100 YEF^k88elm^9k<=gF8MMY1
+R2
+IQ8U@7<YgJ[kj5eRX^1B=g1
+R3
+S1
+R4
+R20
+Z28 8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/plant_PID.sv
+Z29 FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/plant_PID.sv
+!i122 126
+L0 1 70
+R6
+r1
+!s85 0
+31
+Z30 !s108 1746164045.000000
+Z31 !s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/plant_PID.sv|
+Z32 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/plant_PID.sv|
+!i113 1
+R8
+R9
+nplant_@p@i@d
+Xplant_PID_sv_unit
+R0
+R27
+VOjbWk?LDDc``Y41F7X`4a2
+r1
+!s85 0
+!i10b 1
+!s100 gQWL:;1Q99DccZB@5@1nH0
+IOjbWk?LDDc``Y41F7X`4a2
+!i103 1
+S1
+R4
+R20
+R28
+R29
+!i122 126
+L0 70 0
+R6
+31
+R30
+R31
+R32
+!i113 1
+R8
+R9
+nplant_@p@i@d_sv_unit
+vPWM
+R0
+R27
+!i10b 1
+!s100 _a6RnC[WzkHga90`GQdmI2
+R2
+IW=KS>WT`4R`]GElRW[3oU2
+R3
+S1
+R4
+R5
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PWM.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PWM.sv
+!i122 127
+L0 1 36
+R6
+r1
+!s85 0
+31
+R30
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PWM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/PWM.sv|
+!i113 1
+R8
+R9
+n@p@w@m
+vreset_synch
+R0
+R27
+!i10b 1
+!s100 `TSgW8Zn<@J2f;?;JSbZU1
+R2
+IaCkJg=b9jaCj5UVU3@ePJ2
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/reset_synch.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/reset_synch.sv
+!i122 128
+L0 1 26
+R6
+r1
+!s85 0
+31
+R30
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/reset_synch.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/reset_synch.sv|
+!i113 1
+R8
+R9
+vring_osc
+R0
+R27
+!i10b 1
+!s100 L]P83d0ZQQ3?McNKF2bN@2
+R2
+I@nX[gTQDM__DAnFThmDz:1
+R3
+S1
+R4
+R20
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ring_osc.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ring_osc.sv
+!i122 129
+L0 1 15
+R6
+r1
+!s85 0
+31
+R30
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ring_osc.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ring_osc.sv|
+!i113 1
+R8
+R9
+vring_osc_tb
+R0
+R27
+!i10b 1
+!s100 ^HNTE[LQPeH7mSiB6leEX2
+R2
+I3Vf`Jc5198z@dDYXa_nY`3
+R3
+S1
+R4
+Z33 w1746164010
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ring_osc_tb.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ring_osc_tb.sv
+!i122 130
+L0 2 22
+R6
+r1
+!s85 0
+31
+R30
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ring_osc_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ring_osc_tb.sv|
+!i113 1
+R8
+R9
+vsensorCondition
+R0
+Z34 !s110 1746164046
+!i10b 1
+!s100 ?gFW]8S@:KM^_ajIDBRiA1
+R2
+Ii6Y23R91J6IKXd`E3f8bd3
+R3
+S1
+R4
+R33
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/sensorCondition.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/sensorCondition.sv
+!i122 132
+Z35 L0 1 140
+R6
+r1
+!s85 0
+31
+R30
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/sensorCondition.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/sensorCondition.sv|
+!i113 1
+R8
+R9
+nsensor@condition
+vsensorCondition_tb
+R0
+R27
+!i10b 1
+!s100 WOl2j`4H6gi]3RE6?[jGX2
+R2
+IS:W7?jcc[CW0i1lj2MGP03
+R3
+S1
+R4
+R33
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/sensor_condition_tb.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/sensor_condition_tb.sv
+!i122 131
+R17
+R6
+r1
+!s85 0
+31
+R30
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/sensor_condition_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/sensor_condition_tb.sv|
+!i113 1
+R8
+R9
+nsensor@condition_tb
+vSPI_ADC128S
+R0
+R34
+!i10b 1
+!s100 93oj0i;UV@::cHMPGHMJ>1
+R2
+INHMTQdnB4dgR=G]Ag?>L:2
+R3
+S1
+R4
+R5
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_ADC128S.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_ADC128S.sv
+!i122 133
+R35
+R6
+r1
+!s85 0
+31
+Z36 !s108 1746164046.000000
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_ADC128S.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_ADC128S.sv|
+!i113 1
+R8
+R9
+n@s@p@i_@a@d@c128@s
+vSPI_mnrch
+R0
+R22
+!i10b 1
+!s100 :Ah1]Y@>CDb]19VVd4F?42
+R2
+IgazTleGWkdl`jYb6F3P^W0
+R3
+S1
+R4
+w1746164339
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_mnrch.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_mnrch.sv
+!i122 144
+L0 1 143
+R6
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_mnrch.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_mnrch.sv|
+!i113 1
+R8
+R9
+n@s@p@i_mnrch
+vSPI_mnrch_tb
+R0
+R34
+!i10b 1
+!s100 ]Xh1_;iGI?>Y:I6TGQA[20
+R2
+IgX?12DN^ndl=[`VM;?gji0
+R3
+S1
+R4
+R5
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_mnrch_tb.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_mnrch_tb.sv
+!i122 135
+L0 1 175
+R6
+r1
+!s85 0
+31
+R36
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_mnrch_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/SPI_mnrch_tb.sv|
+!i113 1
+R8
+R9
+n@s@p@i_mnrch_tb
+vsynch_detect
+R34
+!i10b 1
+!s100 m31]WSGJe2<<DA:`=VhX50
+R2
+IiKTCHV6Dmd:SV7[e[UhMT0
+R3
+R4
+R33
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/synch_detect.v
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/synch_detect.v
+!i122 136
+L0 1 23
+R6
+r1
+!s85 0
+31
+R36
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/synch_detect.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/synch_detect.v|
+!i113 1
+o-work work
+R9
+Xtb_utils
+R0
+R34
+!i10b 1
+!s100 mEACdT<AjP=CjgiY7LdAL3
+R2
+I`^]U7eEV_Lz1Z6FY6R;bK1
+V`^]U7eEV_Lz1Z6FY6R;bK1
+S1
+R4
+R33
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/tb_utils.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/tb_utils.sv
+!i122 137
+L0 1 0
+R6
+r1
+!s85 0
+31
+R36
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/tb_utils.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/tb_utils.sv|
+!i113 1
+R8
+R9
+vtelemetry
+R0
+R34
+!i10b 1
+!s100 ?mWaQODn6_K82_MbY@iQD0
+R2
+IUlBAi]dj2aK?TaRfK8PCb2
+R3
+S1
+R4
+R33
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/telemetry.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/telemetry.sv
+!i122 138
+R26
+R6
+r1
+!s85 0
+31
+R36
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/telemetry.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/telemetry.sv|
+!i113 1
+R8
+R9
+vtelemetry_tb
+R0
+Z37 !s110 1746164047
+!i10b 1
+!s100 NMlfl877IR^^ZXHaIZG]O0
+R2
+IoMK@BJP>Uc>MdPVWkXHaH2
+R3
+S1
+R4
+R33
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/telemetry_tb.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/telemetry_tb.sv
+!i122 139
+L0 1 169
+R6
+r1
+!s85 0
+31
+R36
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/telemetry_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/telemetry_tb.sv|
+!i113 1
+R8
+R9
+vUART_rcv
+R0
+R37
+!i10b 1
+!s100 e?H4N6Ja[5LK1c7S6k>G20
+R2
+I4;d><QZUG^ZG`]2W;N`BQ0
+R3
+S1
+R4
+R5
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/UART_rcv.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/UART_rcv.sv
+!i122 140
+R12
+R6
+r1
+!s85 0
+31
+Z38 !s108 1746164047.000000
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/UART_rcv.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/UART_rcv.sv|
+!i113 1
+R8
+R9
+n@u@a@r@t_rcv
+vUART_tx
+R0
+R37
+!i10b 1
+!s100 :Q@`FTZ_K_VTzGPje<fZh0
+R2
+IoGBje]doO>FF9^oQ@6TH30
+R3
+S1
+R4
+R13
+8C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/UART_tx.sv
+FC:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/UART_tx.sv
+!i122 141
+R12
+R6
+r1
+!s85 0
+31
+R38
+!s107 C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/UART_tx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/UART_tx.sv|
+!i113 1
+R8
+R9
+n@u@a@r@t_tx

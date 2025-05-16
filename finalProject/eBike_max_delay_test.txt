@@ -1,0 +1,79 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : eBike
+Version: V-2023.12-SP5
+Date   : Fri May  2 01:22:30 2025
+****************************************
+
+Operating Conditions: tt0p85v25c   Library: saed32lvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: clk_r_REG966_S9
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG977_S9
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  eBike              16000                 saed32lvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_r_REG966_S9/CLK (DFFASX1_LVT)                       0.00       0.00 r
+  clk_r_REG966_S9/Q (DFFASX1_LVT)                         0.09       0.09 r
+  U2741/Y (OA21X1_LVT)                                    0.05       0.15 r
+  U2742/Y (AO22X1_LVT)                                    0.05       0.20 r
+  U2743/Y (AO222X1_LVT)                                   0.08       0.27 r
+  U2744/Y (AO222X1_LVT)                                   0.08       0.35 r
+  U2745/Y (AO222X1_LVT)                                   0.08       0.43 r
+  U2746/Y (AO222X1_LVT)                                   0.08       0.50 r
+  U2747/Y (AO222X1_LVT)                                   0.08       0.58 r
+  U2748/Y (AO222X1_LVT)                                   0.08       0.66 r
+  U2749/Y (AO222X1_LVT)                                   0.08       0.74 r
+  U2750/Y (AO222X1_LVT)                                   0.08       0.81 r
+  U2751/Y (AOI222X1_LVT)                                  0.08       0.90 f
+  U2753/Y (OR3X1_LVT)                                     0.05       0.95 f
+  U2754/Y (AO22X1_LVT)                                    0.06       1.01 f
+  U2755/Y (INVX1_LVT)                                     0.06       1.07 r
+  U2761/S (FADDX1_LVT)                                    0.12       1.19 f
+  U2244/Y (INVX0_LVT)                                     0.04       1.23 r
+  iInert/iintegrator/intadd_39/U13/CO (FADDX1_LVT)        0.09       1.32 r
+  iInert/iintegrator/intadd_39/U12/CO (FADDX1_LVT)        0.08       1.40 r
+  iInert/iintegrator/intadd_39/U11/CO (FADDX1_LVT)        0.08       1.48 r
+  iInert/iintegrator/intadd_39/U10/CO (FADDX1_LVT)        0.08       1.56 r
+  iInert/iintegrator/intadd_39/U9/CO (FADDX1_LVT)         0.08       1.65 r
+  iInert/iintegrator/intadd_39/U8/CO (FADDX1_LVT)         0.08       1.73 r
+  iInert/iintegrator/intadd_39/U7/CO (FADDX1_LVT)         0.08       1.81 r
+  iInert/iintegrator/intadd_39/U6/CO (FADDX1_LVT)         0.08       1.89 r
+  iInert/iintegrator/intadd_39/U5/CO (FADDX1_LVT)         0.08       1.97 r
+  iInert/iintegrator/intadd_39/U4/CO (FADDX1_LVT)         0.08       2.05 r
+  iInert/iintegrator/intadd_39/U3/CO (FADDX1_LVT)         0.08       2.13 r
+  U2319/Y (INVX0_LVT)                                     0.02       2.16 f
+  U4183/Y (AO221X1_LVT)                                   0.06       2.22 f
+  U2318/Y (XOR2X1_LVT)                                    0.09       2.30 r
+  clk_r_REG977_S9/D (DFFARX1_LVT)                         0.01       2.31 r
+  data arrival time                                                  2.31
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.15       2.35
+  clk_r_REG977_S9/CLK (DFFARX1_LVT)                       0.00       2.35 r
+  library setup time                                     -0.03       2.32
+  data required time                                                 2.32
+  --------------------------------------------------------------------------
+  data required time                                                 2.32
+  data arrival time                                                 -2.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,90 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : eBike
+Version: V-2023.12-SP5
+Date   : Fri May  2 12:15:56 2025
+****************************************
+
+Operating Conditions: tt0p85v25c   Library: saed32lvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: iInert/iintegrator/roll_int_reg[15]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: iSensorCondition/desiredDrv_inst/assist_prod_1_ff_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  eBike              16000                 saed32lvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  iInert/iintegrator/roll_int_reg[15]/CLK (DFFARX1_LVT)
+                                                          0.00       0.00 r
+  iInert/iintegrator/roll_int_reg[15]/Q (DFFARX1_LVT)     0.09       0.09 r
+  U2464/Y (OR2X1_LVT)                                     0.05       0.14 r
+  U2621/Y (MUX21X1_LVT)                                   0.07       0.21 r
+  U2605/Y (NAND3X0_LVT)                                   0.03       0.24 f
+  U2609/Y (NAND2X0_LVT)                                   0.04       0.28 r
+  U2619/Y (MUX21X2_LVT)                                   0.06       0.34 r
+  U2611/Y (AND2X1_LVT)                                    0.04       0.39 r
+  U2599/Y (NAND2X0_LVT)                                   0.03       0.42 f
+  U1254/Y (AND2X1_LVT)                                    0.04       0.46 f
+  U2723/Y (AO22X1_LVT)                                    0.05       0.51 f
+  U2653/Y (AND2X2_LVT)                                    0.06       0.57 f
+  U2449/Y (OA21X1_LVT)                                    0.07       0.64 f
+  U2625/Y (AND3X2_LVT)                                    0.07       0.71 f
+  iSensorCondition/desiredDrv_inst/mult_50/S3_2_7/S (FADDX1_LVT)
+                                                          0.12       0.83 r
+  U2624/Y (XOR3X2_LVT)                                    0.12       0.95 f
+  U2674/Y (XOR3X2_LVT)                                    0.12       1.07 r
+  U2481/Y (XOR3X1_LVT)                                    0.14       1.21 f
+  iSensorCondition/desiredDrv_inst/mult_50/S2_6_3/S (FADDX1_LVT)
+                                                          0.12       1.32 r
+  iSensorCondition/desiredDrv_inst/mult_50/S2_7_2/CO (FADDX1_LVT)
+                                                          0.08       1.41 r
+  iSensorCondition/desiredDrv_inst/mult_50/S2_8_2/CO (FADDX1_LVT)
+                                                          0.09       1.50 r
+  iSensorCondition/desiredDrv_inst/mult_50/S2_9_2/CO (FADDX1_LVT)
+                                                          0.09       1.60 r
+  iSensorCondition/desiredDrv_inst/mult_50/S2_10_2/CO (FADDX1_LVT)
+                                                          0.09       1.69 r
+  iSensorCondition/desiredDrv_inst/mult_50/S4_2/S (FADDX1_LVT)
+                                                          0.12       1.81 f
+  U2647/Y (XOR2X1_LVT)                                    0.09       1.90 r
+  U2645/Y (NAND2X0_LVT)                                   0.04       1.94 f
+  U1238/Y (OA21X1_LVT)                                    0.06       2.00 f
+  U1234/Y (OA21X1_LVT)                                    0.05       2.05 f
+  U1230/Y (OA21X1_LVT)                                    0.05       2.09 f
+  U2802/Y (OA21X1_LVT)                                    0.05       2.14 f
+  U2801/Y (AO21X1_LVT)                                    0.05       2.19 f
+  U2774/Y (XOR2X1_LVT)                                    0.08       2.27 r
+  U1222/Y (AO22X1_LVT)                                    0.04       2.31 r
+  iSensorCondition/desiredDrv_inst/assist_prod_1_ff_reg[19]/D (DFFARX1_LVT)
+                                                          0.01       2.32 r
+  data arrival time                                                  2.32
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.15       2.35
+  iSensorCondition/desiredDrv_inst/assist_prod_1_ff_reg[19]/CLK (DFFARX1_LVT)
+                                                          0.00       2.35 r
+  library setup time                                     -0.03       2.32
+  data required time                                                 2.32
+  --------------------------------------------------------------------------
+  data required time                                                 2.32
+  data arrival time                                                 -2.32
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+1

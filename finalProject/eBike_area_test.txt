@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : eBike
+Version: V-2023.12-SP5
+Date   : Fri May  2 01:22:30 2025
+****************************************
+
+Library(s) Used:
+
+    saed32lvt_tt0p85v25c (File: /cae/apps/data/saed32_edk-2023/lib/stdcell_lvt/db_nldm/saed32lvt_tt0p85v25c.db)
+
+Number of ports:                           25
+Number of nets:                          3690
+Number of cells:                         3079
+Number of combinational cells:           2385
+Number of sequential cells:               693
+Number of macros/black boxes:               0
+Number of buf/inv:                        342
+Number of references:                      50
+
+Combinational area:               6285.235234
+Buf/Inv area:                      454.663616
+Noncombinational area:            4705.730400
+Macro/Black Box area:                0.000000
+Net Interconnect area:            2669.714588
+
+Total cell area:                 10990.965634
+Total area:                      13660.680222
+1

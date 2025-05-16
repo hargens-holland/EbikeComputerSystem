@@ -1,0 +1,53 @@
+###########################
+# Read in sverilog source #
+###########################
+read_file -format sverilog { eBike.sv reset_synch.sv A2D_intf.sv sensorCondition.sv incline_sat.sv PID.sv brushless.sv mtr_drv.sv inert_intf.sv PB_intf.sv SPI_mnrch.sv cadence_filt.sv cadence_LU.sv cadence_meas.sv nonoverlap.sv inertial_integrator.sv desiredDrive.sv telemetry.sv UART_tx.sv PWM.sv }
+
+###############################
+#Set top level to be telemetry#
+###############################
+current_design eBike
+link
+
+# Creates a clock and sets to don't touch
+create_clock -name "clk" -period 2.5 {clk}
+set_dont_touch_network [find port clk]
+
+# sets pointers to all inputs but clk, and one for all but clock and rst_n
+set prim_inputs [remove_from_collection [all_inputs] [find port clk]]
+set no_rst [remove_from_collection [copy_collection $prim_inputs] [find port RST_n]]
+
+# set input delay, and drive strength
+set_input_delay -clock clk 0.3 [copy_collection $prim_inputs]
+set_driving_cell -lib_cell NAND2X2_LVT [copy_collection $no_rst]
+
+#set output delay and load
+set_output_delay -clock clk 0.5 [all_outputs]
+set_load 50 [all_outputs]
+
+# sets max transition time
+set_max_transition 0.2 [current_design]
+
+# sets the wire load model to synopsys 32nm
+set_wire_load_model -name 16000 -library saed32lvt_tt0p85v25c
+
+
+# compiles and then smashes hierarchy
+compile -map_effort low
+ungroup -all -flatten
+
+set_clock_uncertainty 0.15 clk
+set_fix_hold clk
+
+compile -map_effort high
+check_design
+
+#gives min delay and max delay report
+report_timing -path full -delay max > eBike_max_delay.txt
+report_timing -path full -delay min > eBike_min_delay.txt
+
+#gives area report
+report_area > eBike_area.txt
+
+#writes out final netlist
+write -format verilog eBike -output eBike.vg

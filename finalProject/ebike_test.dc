@@ -1,0 +1,65 @@
+###########################
+# Read in sverilog source #
+###########################
+read_file -format sverilog { eBike.sv reset_synch.sv A2D_intf.sv sensorCondition.sv incline_sat.sv PID.sv brushless.sv mtr_drv.sv inert_intf.sv PB_intf.sv SPI_mnrch.sv cadence_filt.sv cadence_LU.sv cadence_meas.sv nonoverlap.sv inertial_integrator.sv desiredDrive.sv telemetry.sv UART_tx.sv PWM.sv }
+
+
+###############################
+# Set top-level design
+###############################
+current_design eBike
+link
+
+###############################
+# Clock and timing constraints
+###############################
+create_clock -name "clk" -period 2.5 [get_ports clk]
+set_dont_touch_network [get_ports clk]
+
+set prim_inputs [remove_from_collection [all_inputs] [get_ports clk]]
+set no_rst [remove_from_collection $prim_inputs [get_ports RST_n]]
+
+set_input_delay -clock clk 0.3 $prim_inputs
+set_driving_cell -lib_cell NAND2X2_LVT $no_rst
+
+set_output_delay -clock clk 0.5 [all_outputs]
+set_load 50 [all_outputs]
+
+# Limit max transition and capacitance to encourage smaller cell usage
+set_max_transition 0.2 [current_design]
+set_max_capacitance 0.1 [all_outputs]
+
+# Set wire load model for 32nm
+set_wire_load_model -name 16000 -library saed32lvt_tt0p85v25c
+
+################################
+# Area-driven compile settings
+################################
+set compile_ultra_optimization true
+set compile_ultra_area_optimization true
+set_optimize_registers true
+
+###############################
+# Compile with area priority
+###############################
+compile_ultra -no_autoungroup -retime -area
+ungroup -all -flatten
+
+set_clock_uncertainty 0.15 clk
+set_fix_hold clk
+
+# Recompile after flattening
+compile_ultra -no_autoungroup -retime -area
+optimize_netlist -area
+###############################
+# Reports
+###############################
+report_timing -path full -delay max > eBike_max_delay_test.txt
+report_timing -path full -delay min > eBike_min_delay_test.txt
+report_area > eBike_area_test.txt
+report_reference > cell_usage_test.txt
+
+###############################
+# Output netlist
+###############################
+write -format verilog -hierarchy -output eBike_test.vg

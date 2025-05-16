@@ -1,0 +1,288 @@
+`timescale 1ns/1ps
+
+module eBike__ps_tb2();
+
+  ///////////////////////////
+  // Stimulus of type reg //
+  /////////////////////////
+  reg clk, RST_n;
+  reg [11:0] BATT;                // analog values
+  reg [11:0] BRAKE, TORQUE;       // analog values
+  reg tgglMd;                     // push button for assist mode
+  reg [15:0] YAW_RT;              // models angular rate of incline (+ => uphill)
+  reg cadence;
+
+  //////////////////////////////////////////////////
+  // Declare any internal signal to interconnect //
+  ////////////////////////////////////////////////
+  wire A2D_SS_n, A2D_MOSI, A2D_SCLK, A2D_MISO;
+  wire highGrn, lowGrn, highYlw, lowYlw, highBlu, lowBlu;
+  wire hallGrn, hallBlu, hallYlw;
+  wire inertSS_n, inertSCLK, inertMISO, inertMOSI, inertINT;
+  wire [1:0] LED;
+  
+  wire signed [11:0] coilGY, coilYB, coilBG;
+  wire [11:0] BATT_TX, TORQUE_TX, CURR_TX;
+  wire vld_TX;
+  wire TX_RX;
+
+  //////////////////////////////////////////////////
+  // Instantiate model of analog input circuitry //
+  ////////////////////////////////////////////////
+  AnalogModel iANLG(.clk(clk), .rst_n(RST_n), .SS_n(A2D_SS_n), .SCLK(A2D_SCLK),
+                    .MISO(A2D_MISO), .MOSI(A2D_MOSI), .BATT(BATT),
+                    .CURR(CURR_TX), .BRAKE(BRAKE), .TORQUE(TORQUE));
+
+  ////////////////////////////////////////////////////////////////
+  // Instantiate model inertial sensor used to measure incline //
+  //////////////////////////////////////////////////////////////
+  eBikePhysics iPHYS(.clk(clk), .RST_n(RST_n), .SS_n(inertSS_n), .SCLK(inertSCLK),
+                     .MISO(inertMISO), .MOSI(inertMOSI), .INT(inertINT),
+                     .yaw_rt(YAW_RT), .highGrn(highGrn), .lowGrn(lowGrn),
+                     .highYlw(highYlw), .lowYlw(lowYlw), .highBlu(highBlu),
+                     .lowBlu(lowBlu), .hallGrn(hallGrn), .hallYlw(hallYlw),
+                     .hallBlu(hallBlu), .avg_curr(CURR_TX));
+
+  //////////////////////
+  // Instantiate DUT //
+  ////////////////////
+  eBike_netlist iDUT(.clk(clk), .RST_n(RST_n), .A2D_SS_n(A2D_SS_n), .A2D_MOSI(A2D_MOSI),
+                     .A2D_SCLK(A2D_SCLK), .A2D_MISO(A2D_MISO), .hallGrn(hallGrn),
+                     .hallYlw(hallYlw), .hallBlu(hallBlu), .highGrn(highGrn),
+                     .lowGrn(lowGrn), .highYlw(highYlw), .lowYlw(lowYlw),
+                     .highBlu(highBlu), .lowBlu(lowBlu), .inertSS_n(inertSS_n),
+                     .inertSCLK(inertSCLK), .inertMOSI(inertMOSI),
+                     .inertMISO(inertMISO), .inertINT(inertINT),
+                     .cadence(cadence), .tgglMd(tgglMd), .TX(TX_RX),
+                     .LED(LED));
+
+  // Task to apply pedaling for specified duration
+  task apply_pedaling(input int cycles);
+    begin
+      for (int i = 0; i < cycles; i++) begin
+        cadence = 0;
+        repeat(2048) @(posedge clk);
+        cadence = 1;
+        repeat(2048) @(posedge clk);
+      end
+    end
+  endtask
+
+  // Task to toggle assist mode
+  task toggle_mode();
+    begin
+      tgglMd = 1;
+      repeat(500) @(posedge clk);
+      tgglMd = 0;
+      repeat(500) @(posedge clk);
+    end
+  endtask
+
+  // Main test sequence
+  initial begin
+    //////////////////////////////
+    // Initial stimulus setup  //
+    //////////////////////////////
+    clk = 0;
+    RST_n = 0;
+    BATT = 12'hB11;
+    BRAKE = 12'h900;
+    TORQUE = 12'h000;
+    YAW_RT = 16'h0000;
+    tgglMd = 0;
+    cadence = 0;
+
+    // Proper async reset pulse covering posedge and negedge
+    @(posedge clk);
+    @(negedge clk);
+    RST_n = 1;
+
+    // Stabilization time
+    repeat(1000) @(posedge clk);
+
+    //////////////////////////
+    // TEST 1: TORQUE TEST //
+    //////////////////////////
+    
+    // Start with no torque - baseline
+    TORQUE = 12'h000;
+    apply_pedaling(32);
+    
+    // Low torque
+    TORQUE = 12'h300;
+    apply_pedaling(64);
+    
+    // Medium torque
+    TORQUE = 12'h600;
+    apply_pedaling(64);
+    
+    // High torque
+    TORQUE = 12'h900;
+    apply_pedaling(64);
+    
+    // Max torque
+    TORQUE = 12'hC00;
+    apply_pedaling(64);
+    
+    // Decreasing torque back to medium
+    TORQUE = 12'h600;
+    apply_pedaling(64);
+    
+    // Back to low torque
+    TORQUE = 12'h300;
+    apply_pedaling(64);
+    
+    // No torque
+    TORQUE = 12'h000;
+    apply_pedaling(32);
+    
+    // Pause between tests
+    repeat(5000) @(posedge clk);
+    
+    ///////////////////////////
+    // TEST 2: INCLINE TEST //
+    ///////////////////////////
+    
+    // Set medium torque for incline tests
+    TORQUE = 12'h600;
+   
+    
+    // Flat ground (baseline)
+    YAW_RT = 16'h0000;
+    apply_pedaling(64);
+    
+    // Slight uphill
+    YAW_RT = 16'h1000;
+    apply_pedaling(64);
+    
+    // Moderate uphill
+    YAW_RT = 16'h2000;
+    apply_pedaling(64);
+    
+    // Steep uphill
+    YAW_RT = 16'h3000;
+    apply_pedaling(64);
+    
+    // Back to moderate
+    YAW_RT = 16'h2000;
+    apply_pedaling(64);
+    
+    // Back to slight incline
+    YAW_RT = 16'h1000;
+    apply_pedaling(64);
+    
+    // Flat again
+    YAW_RT = 16'h0000;
+    apply_pedaling(64);
+    
+    // Pause between tests
+    repeat(5000) @(posedge clk);
+    
+    ///////////////////////////
+    // TEST 3: BATTERY TEST //
+    ///////////////////////////
+    
+    // Reset to medium torque on flat ground
+    TORQUE = 12'h600;
+    YAW_RT = 16'h0000;
+    
+    // Full battery (baseline)
+    BATT = 12'hB11;
+    apply_pedaling(64);
+    
+    // High battery (75%)
+    BATT = 12'h900;
+    apply_pedaling(64);
+    
+    // Medium battery (50%)
+    BATT = 12'h300;
+    apply_pedaling(64);
+    
+    // Low battery (25%)
+    BATT = 12'h200;
+    apply_pedaling(64);
+    
+    // Critical battery (10%)
+    BATT = 12'h100;
+    apply_pedaling(64);
+    
+    // Back to full battery for remaining tests
+    BATT = 12'hB11;
+    
+    // Pause between tests
+    repeat(5000) @(posedge clk);
+    
+    ///////////////////////////
+    // TEST 4: BRAKING TEST //
+    ///////////////////////////
+    
+    // Set medium torque on flat ground
+    TORQUE = 12'h600;
+    YAW_RT = 16'h0000;
+    
+    // No braking (baseline)
+    BRAKE = 12'h900;
+    apply_pedaling(64);
+    
+    // Light braking
+    BRAKE = 12'h600;
+    apply_pedaling(64);
+    
+    // Medium braking
+    BRAKE = 12'h400;
+    apply_pedaling(64);
+    
+    // Hard braking
+    BRAKE = 12'h200;
+    apply_pedaling(64);
+    
+    // Full braking
+    BRAKE = 12'h000;
+    apply_pedaling(64);
+    
+    // Release brake
+    BRAKE = 12'h900;
+    apply_pedaling(64);
+    
+    // Pause between tests
+    repeat(5000) @(posedge clk);
+    
+    /////////////////////////////
+    // TEST 5: ASSIST MODES   //
+    /////////////////////////////
+    
+    // Set medium torque on flat ground
+    TORQUE = 12'h600;
+    YAW_RT = 16'h0000;
+    BRAKE = 12'h900;
+    
+    // Starts in medium assist (default)
+    apply_pedaling(64);
+    
+    // Toggle to high assist
+    toggle_mode();
+    apply_pedaling(64);
+    
+    // Toggle to off
+    toggle_mode();
+    apply_pedaling(64);
+    
+    // Toggle to low assist
+    toggle_mode();
+    apply_pedaling(64);
+    
+    // Toggle back to medium
+    toggle_mode();
+    apply_pedaling(64);
+  
+    // End of simulation
+    repeat(1000) @(posedge clk);
+    
+
+    $stop();
+  end
+
+  // Clock generation
+  always #10 clk = ~clk;
+
+endmodule

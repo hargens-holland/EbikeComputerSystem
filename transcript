@@ -1,0 +1,138 @@
+# Compile of A2D_intf.sv was successful.
+# Compile of A2D_intf_tb.sv was successful.
+# Compile of ADC128S.sv was successful.
+# Compile of AnalogModel.sv was successful.
+# Compile of brushless.sv was successful.
+# Compile of brushless_mtr_drive.sv was successful.
+# Compile of cadence_filt.sv was successful.
+# Compile of cadence_filt_tb.sv was successful.
+# Compile of cadence_LU.sv was successful.
+# Compile of cadence_meas.sv was successful.
+# Compile of coil_volt.sv was successful.
+# Compile of desiredDrive.sv was successful.
+# Compile of eBike.sv was successful.
+# Compile of eBike_tb.sv was successful with warnings.
+# Compile of ebike_tb2.sv was successful.
+# Compile of eBikePhysics.sv was successful.
+# Compile of hub_wheel_model.sv was successful.
+# Compile of incline_sat.sv was successful.
+# Compile of incline_sat_tb.sv was successful.
+# Compile of inert_intf.sv was successful.
+# Compile of inert_intf_test.sv was successful.
+# Compile of inertial_integrator.sv was successful with warnings.
+# Compile of mtr_drv.sv was successful.
+# Compile of nonoverlap.sv was successful.
+# Compile of PB_intf.sv was successful.
+# Compile of PID.sv was successful.
+# Compile of PID_tb.sv was successful.
+# Compile of plant_PID.sv was successful with warnings.
+# Compile of PWM.sv was successful.
+# Compile of reset_synch.sv was successful.
+# Compile of ring_osc.sv was successful.
+# Compile of ring_osc_tb.sv was successful.
+# Compile of sensor_condition_tb.sv was successful.
+# Compile of sensorCondition.sv was successful.
+# Compile of SPI_ADC128S.sv was successful.
+# Compile of SPI_mnrch.sv was successful.
+# Compile of SPI_mnrch_tb.sv was successful.
+# Compile of synch_detect.v was successful.
+# Compile of tb_utils.sv was successful.
+# Compile of telemetry.sv was successful.
+# Compile of telemetry_tb.sv was successful.
+# Compile of UART_rcv.sv was successful.
+# Compile of UART_tx.sv was successful.
+# 43 compiles, 0 failed with no errors.
+vsim -gui work.eBike_tb2
+# vsim -gui work.eBike_tb2 
+# Start time: 00:34:14 on May 02,2025
+# Loading sv_std.std
+# Loading work.eBike_tb2
+# Loading work.AnalogModel
+# Loading work.SPI_ADC128S
+# Loading work.eBikePhysics
+# Loading work.eBike
+# Loading work.reset_synch
+# Loading work.A2D_intf
+# Loading work.SPI_mnrch
+# Loading work.sensorCondition
+# Loading work.cadence_filt
+# Loading work.cadence_meas
+# Loading work.cadence_LU
+# Loading work.desiredDrive
+# Loading work.incline_sat
+# Loading work.telemetry
+# Loading work.UART_tx
+# Loading work.PID
+# Loading work.brushless
+# Loading work.mtr_drv
+# Loading work.PWM
+# Loading work.nonoverlap
+# Loading work.inert_intf
+# Loading work.inertial_integrator
+# Loading work.PB_intf
+run -all
+add wave -position insertpoint  \
+sim:/eBike_tb2/iDUT/iInert/yaw_rt
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hshar  Hostname: HOLLANDS_DELL  ProcessID: 27804
+#           Attempting to use alternate WLF file "./wlft0i5hsa".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0i5hsa
+add wave -position insertpoint  \
+sim:/eBike_tb2/iDUT/iSensorCondition/target_curr \
+sim:/eBike_tb2/iDUT/iSensorCondition/error \
+sim:/eBike_tb2/iDUT/iSensorCondition/avg_curr
+add wave -position insertpoint  \
+sim:/eBike_tb2/YAW_RT \
+sim:/eBike_tb2/TORQUE \
+sim:/eBike_tb2/tgglMd \
+sim:/eBike_tb2/cadence \
+sim:/eBike_tb2/BRAKE \
+sim:/eBike_tb2/BATT
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run -all
+# Compile of inert_intf.sv was successful.
+# Compile of PID.sv was successful.
+# Compile of SPI_mnrch.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.SPI_mnrch
+# Loading work.PID
+# Loading work.inert_intf
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run -all
+# ** Note: $stop    : C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ebike_tb2.sv(276)
+#    Time: 157806410 ps  Iteration: 1  Instance: /eBike_tb2
+# Break in Module eBike_tb2 at C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ebike_tb2.sv line 276
+# Compile of PID.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.PID
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run -all
+# ** Note: $stop    : C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ebike_tb2.sv(276)
+#    Time: 157806410 ps  Iteration: 1  Instance: /eBike_tb2
+# Break in Module eBike_tb2 at C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ebike_tb2.sv line 276
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ebike_tb2.sv(276)
+#    Time: 157806410 ps  Iteration: 1  Instance: /eBike_tb2
+# Break in Module eBike_tb2 at C:/Users/hshar/OneDrive/Documents/ECE551/ece551/finalProject/ebike_tb2.sv line 276
+# Compile of PID.sv failed with 3 errors.
+# Compile of PID.sv failed with 2 errors.
+# Compile of PID.sv was successful.
